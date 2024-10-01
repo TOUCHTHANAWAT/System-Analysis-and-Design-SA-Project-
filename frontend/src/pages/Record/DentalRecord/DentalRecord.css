@@ -1,0 +1,148 @@
+.dental-records {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    margin-left: -580px;
+    margin-Top: 12px;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .patient-select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-record-button {
+    background-color: #00c1a4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .records-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .records-table th, .records-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .records-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Fixed column widths */
+  .records-table th:nth-child(1),
+  .records-table td:nth-child(1) {
+    width: 8%;
+  }
+  
+  .records-table th:nth-child(2),
+  .records-table td:nth-child(2) {
+    width: 10%;
+  }
+  
+  .records-table th:nth-child(3),
+  .records-table td:nth-child(3) {
+    width: 12%;
+  }
+  
+  /* Center align the header */
+  .records-table th:nth-child(4) {
+    width: 30%;
+    text-align: center; /* Center align the header text */
+  }
+  
+  /* Left align the content */
+  .records-table td:nth-child(4) {
+    width: 30%;
+    text-align: left; /* Left align the content */
+    word-wrap: break-word; /* Enable word wrapping for long descriptions */
+    white-space: normal; /* Allow the text to wrap onto new lines */
+    text-align: center; /* Center align the header text */
+  }
+  
+  
+  .records-table th:nth-child(5),
+  .records-table td:nth-child(5) {
+    width: 10%;
+  }
+  
+  .records-table th:nth-child(6),
+  .records-table td:nth-child(6) {
+    width: 10%;
+  }
+  
+  .records-table th:nth-child(7),
+  .records-table td:nth-child(7) {
+    width: 15%;
+  }
+  
+  .records-table td {
+    background-color: #fff;
+  }
+  
+  .edit-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  .centered-logo-wrapper {
+    width: 98px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  margin-bottom: -10px;
+  }
+  
+  .centered-logo-image {
+    width: 100%;
+    height: auto;
+  }
+  

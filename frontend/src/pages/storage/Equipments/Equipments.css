@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+h2,table,button,h1,div{
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/* ตั้งค่าสีพื้นหลังให้กับตาราง */
+.ant-table-thead > tr > th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+    text-align: center;
+}
+
+/* ตั้งค่าขอบตาราง */
+.ant-table {
+    border: 1px solid #42C2C2;
+    border-radius: 50px;
+}
+
+/* ปรับแต่งหัวข้อของหน้า */
+/*h1 {
+  color: #10094d;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px; 
+  font-size: 28px; 
+  margin-left: -9px;
+  margin-right: 0; 
+}*/
+
+
+/* ปรับแต่งพื้นที่ของปุ่มเพิ่มอุปกรณ์ */
+.space-align-container .ant-space {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+/* ปรับแต่งเส้นคั่น */
+.ant-divider {
+    border-top: 2px solid #42C2C2;
+    width: 100%;
+} 
+  .table-container {
+    max-height: 2000px;   
+    overflow-y: auto;   
+    overflow-x: hidden;  
+  }
+  
+  body {
+    overflow-y: hidden;   
+    overflow-x: hidden; 
+  }
+
+  .custom-search input {
+    color: #000; 
+  }
+  
+  .custom-search .ant-input {
+    background-color: #ffffff; 
+    border-color: #42C2C2; 
+  }
+  
+  .custom-search .ant-btn-primary {
+    background-color: #42C2C2; 
+    color: #fff;
+  }
+
+.custom-search .ant-btn-primary:hover {
+  background-color: #42C2C2 !important; 
+  border-color: #0cdcdc !important; 
+  color: #fff !important;
+}
+
+/* เปลี่ยนสีขอบของช่องค้นหาเมื่อเมาส์ชี้ */
+.custom-search input[type="text"]:hover,
+.custom-search input[type="text"]:focus {
+  border-color: #0cdcdc !important; 
+}

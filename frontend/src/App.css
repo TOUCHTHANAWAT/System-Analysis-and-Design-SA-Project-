@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%; /* Make it take full width */
+  overflow: hidden; /* Remove scrollbar */
+  background-color: #F5F5F5; /* Match background */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: auto; /* Adjust to auto height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 1rem;
+}
+
+.card {
+  padding: 2em;
+  width: 70%; /* Adjust width like the login card */
+  height: auto;
+  max-height: 550px; /* Match the card max height */
+  overflow-y: scroll;
+}
+
+.logo {
+  width: 100%; /* Adjust width */
+  height: auto;
+  max-height: 400px; /* Match image max height */
+  object-fit: contain; /* Ensure it fits properly */
+}
+
+.login-form-button {
+  width: 100%;
+}

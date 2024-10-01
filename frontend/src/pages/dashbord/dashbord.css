@@ -1,0 +1,117 @@
+.headerdash {
+  margin-top: 45px;
+  background-color: #ffffff;
+  width: 100;
+  margin-left: 1px;
+  text-align: left;
+  /* border-bottom: 2px solid #22225E; */
+}
+.scalCarousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  background-color: rgb(255, 127, 238);
+}
+.carousel-container {
+  display: flex;
+  justify-content: center; /* Centers the children horizontally */
+  align-items: center; /* Centers the children vertically */
+  height: 100%; /* Ensure it takes full height */
+}
+
+.carousel-image {
+  max-width: 100%; /* Makes sure the image does not exceed container width */
+  max-height: 100%; /* Makes sure the image does not exceed container height */
+  object-fit: cover; /* Keeps the aspect ratio */
+}
+
+.card-container {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  overflow-x: scroll; /* ใช้ scroll เพื่อให้สามารถเลื่อนได้ */
+  scroll-behavior: smooth;
+  width: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  scrollbar-width: none; /* ซ่อน scrollbar สำหรับ Firefox */
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* ซ่อน scrollbar สำหรับ Chrome, Safari และ Edge */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 240px;
+  max-width: 240px;
+  flex: 0 0 auto;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.hover-card .ant-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.static-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, #54cfcf);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.hidden-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #ffffff;
+  transition: transform 0.5s ease;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #22225E;
+}
+
+.hover-card:hover .hidden-content {
+  transform: translateY(0);
+}
+
+.hover-card .ant-card-meta-title {
+  color: #22225e;
+  font-size: 20px;
+}
+
+.hover-card .ant-card-meta-description {
+  color: #22225e;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .hover-card {
+    min-width: 200px;
+    height: 300px;
+  }
+}

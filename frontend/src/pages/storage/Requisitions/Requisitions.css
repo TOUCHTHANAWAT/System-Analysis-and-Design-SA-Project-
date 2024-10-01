@@ -1,0 +1,66 @@
+/* ตั้งค่าสีพื้นหลังให้กับตาราง */
+.ant-table-thead > tr > th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+}
+
+/* ตั้งค่าขอบตาราง */
+.ant-table {
+  border: 1px solid #42C2C2;
+  border-radius: 50px;
+}
+
+/* ปรับแต่งหัวข้อของหน้า */
+h1 {
+color: #333333;
+font-weight: bold;
+text-align: left;
+margin-top: 10px; 
+font-size: 22px; 
+margin-left: -9px;
+margin-right: 0; 
+}
+
+/* ปรับแต่งพื้นที่ของปุ่มเพิ่มอุปกรณ์ */
+.space-align-container .ant-space {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.ant-divider {
+  border-top: 2px solid #42C2C2;
+  width: 100%;
+}
+
+button.ant-btn-primary {
+background-color: #42C2C2 !important;
+border-color: #42C2C2 !important;
+}
+
+button.ant-btn-primary:hover {
+background-color: #5ed7d7 !important; 
+border-color: #35a1a1 !important;
+}
+
+button.ant-btn-primary:focus {
+background-color:  #42C2C2 !important; 
+border-color:  #42C2C2 !important;
+box-shadow: none !important;
+}
+
+button.ant-btn-primary:active {
+background-color: #42C2C2 !important;
+border-color:#42C2C2 !important;
+box-shadow: none !important; 
+}
+
+.custom-search .ant-picker:hover {
+border-color: #0cdcdc !important; 
+}

@@ -1,0 +1,415 @@
+/* PaymentPage.css */
+
+/* General Styles */
+.payment-page {
+  width: 100%;
+  max-width: 1300px; /* Restrict the maximum width */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  background-color: #ffffff;
+  min-height: 650px;
+
+}
+
+.header2 {
+  background-color: #ffffff;
+  width: 100;
+  margin-left: 1px;
+  text-align: left;
+  border-bottom: 2px solid #22225E;
+}
+.page-title {
+  font-size: 1.5rem; /* Use rem for scalability */
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 2px solid #22225E;
+  padding-bottom: 10px;
+  color: #22225E;
+}
+
+/* Layout */
+.content-container {
+  display: flex;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%; /* Ensure container fits within parent */
+}
+.content-container-left {
+  display:flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%; /* Ensure container fits within parent */
+  /*background-color: #42C2C2;*/
+}
+.content-container-right {
+  display:flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%; /* Ensure container fits within parent */
+  /*background-color: #42C2C2;*/
+}
+
+
+.left-panel {
+  /*border: 1px solid #000000;*/
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  overflow: hidden; /* Prevent content from overflowing */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.206);
+  
+}
+.mainright-panel{ 
+    overflow: hidden; /* Prevent content from overflowing */
+    min-height: 385px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.right-panel{
+  /*border: 1px solid #000000;*/
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  overflow: hidden; /* Prevent content from overflowing */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.206);
+  /*background-color: #007500;*/
+  margin-top: 10px;
+  min-height: 365px;
+}
+
+
+#name{
+  margin: 5px 0;
+  color: #22225E;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.patient-info p,
+.medical-info p,
+.allergy-section p {
+  margin: 5px 0;
+  color: #22225E;
+}
+
+.medical-info h3,
+.allergy-section h3 {
+  margin-bottom: 10px;
+  color: #22225E;
+}
+
+.medical-info ul,
+.allergy-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.allergy-section ul li {
+  color: #d0021b;
+}
+
+/* Table Styles */
+.payment-table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.payment-table {
+  width: 100%;
+  min-width: 600px; /* Set a minimum width for the table */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #22225E;
+}
+
+.payment-table th,
+.payment-table td {
+  /*border: 1px solid #ddd;*/
+  padding: 8px;
+  text-align: left;
+  color: #22225E;
+}
+
+/* Payment Summary */
+.payment-summary {
+  /*background-color: #42C2C2;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.summary-item {
+  /*flex: 1 0 45%; /* Adjust to be responsive */
+  /*padding: 10px;*/
+  border-radius: 10px;
+  /*color: #22225E;*/
+  /*box-sizing: border-box; /* Ensure padding is included in the total width */
+  min-width: 250px; /* Prevent items from getting too narrow */
+  height: 90px;
+}
+
+.summary-item.total {
+  border-color: #22225E;
+  color: #ffffff;
+  margin-left: 5px;
+  background:linear-gradient(90deg, #27a778, #51daa8);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.300);
+}
+
+.summary-item.installment {
+  border-color: #22225E;
+  color: #ffffff;
+  width: 290px;
+  margin-right: 5px;
+  background:linear-gradient(90deg, #a72761, #df5e98);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.300);
+}
+.summary-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* จัดให้อยู่กึ่งกลางตามแนวแกนตั้ง */
+}
+
+.summary-title {
+  text-align: left;
+  font-size:medium;
+  margin-top: 0px;
+  margin-left: 5PX;
+  /*white-space: nowrap;*/
+  margin: 0; /* กำจัดระยะห่างรอบข้อความ */
+}
+.summary-title.total{
+  font-weight:bolder;
+}
+
+
+.summary-value {
+  text-align: bottom;
+  text-align: right;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+/* Payment Action */
+.payment-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
+
+.payment-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.pay-button {
+  background-color: #42C2C2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #42c2c2aa;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-container {
+    grid-template-columns: 1fr; /* Switch to single-column layout */
+  }
+
+  .summary-item {
+    flex: 1 0 100%; /* Full width for summary items */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .right-panel {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .summary-item {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+  }
+
+  .payment-action {
+    justify-content: center;
+  }
+}
+
+
+
+.logocenter {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*start modal*/
+.payment-page {
+  padding: 20px;
+}
+
+
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.payment-option-button {
+  padding: 10px 20px;
+  border: 3px solid #22225E;
+  box-shadow: 0px 4px 5px #22225e78;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  color: #22225E;
+}
+
+.payment-option-button.selected {
+  background-color: #22225E; /* Green background for selected button */
+  color: white;
+  border-color: #22225E;
+}
+
+.payment-option-button:hover {
+  background-color: #22225E;
+  color: white;
+}
+
+.payment-confirmation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.paycancel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #B2B2B2;
+  color: white;
+}
+
+.paycancel-button:hover{
+  background-color: #b2b2b2aa;
+}
+
+.payconfirm-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #42C2C2;
+  color: white;
+}
+
+.payconfirm-button:hover{
+  background-color: #42c2c2aa;
+}
+
+.payment-modal .ant-modal-content {
+  border-radius: 15px;
+}
+
+.payment-modal .ant-modal-header {
+  text-align: center;
+  border-bottom: none;
+}
+
+.payment-modal .ant-modal-title {
+  font-size: 20px;
+}
+
+.payment-modal .ant-modal-footer {
+  display: none; /* Remove default footer */
+}
+
+
+
+.summary-item {
+  display: inline;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.detail-item {
+  font-size: 16px;
+  margin: 10px 0;
+}
+/*end modal*/
+
+/*เริ่มส่วนtitle ของ Modalและรูปขยับ*/
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing between image and text */
+  color: #22225E;
+}
+
+.title-logo {
+  width: 50px; /* Adjust the size of the logo as needed */
+  height: 50px;
+  
+}
+/*จบส่วนtitle ของ Modalและรูปขยับ*/
+
+
+.payment-details {
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+.tablemodal{
+  width: 80%;
+  margin-left: 10%;
+}
+.tablemodal tr{
+  color: #22225E;
+}
+.lefttablemodal{
+  text-align: left;
+}
+
+.righttablemodal{
+  text-align: right;
+}
+

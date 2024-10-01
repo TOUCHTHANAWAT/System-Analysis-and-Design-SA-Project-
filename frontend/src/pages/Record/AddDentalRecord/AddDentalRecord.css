@@ -1,0 +1,130 @@
+.add-treatment-record {
+  max-width: 900px; /* Increase the width for a much wider form */
+  max-height: 650px;
+  margin: 0 auto; /* Center the form */
+  padding: 50px; /* Increased padding for better spacing */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+  font-family: 'Noto Sans Thai', sans-serif;
+  color: #333;
+}
+
+header h1 {
+  font-size: 28px; /* Increased font size */
+  color: #22225E; /* Dark blue color */
+  margin-bottom: 20px; /* Space below the header */
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+header h1::before {
+  content: '💉'; /* Icon for the header */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Ensure fields are well spaced */
+  margin-bottom: 0.2px; /* More space between rows */
+  gap: 20px; /* กำหนดช่องว่างระหว่างฟิลด์ */
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px; /* Increase margin for more spacing between inputs */
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  width: 100%;
+  display: block;
+  font-size: 14px; /* Larger font size for labels */
+  margin-bottom: 9px; /* Increase space between label and input */
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 90%;
+  padding: 12px; /* Increased padding inside inputs */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 1px;
+  font-size: 16px; /* Increased font size inside inputs */
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px; /* More space between the buttons */
+  margin-top: 0.5px;
+  justify-content: flex-start;
+}
+
+.submit-button,
+.reset-button,
+.cancel-button {
+  width: 9%; /* กำหนดความกว้างของปุ่ม */
+  min-width: 50px; /* Buttons will size automatically based on text */
+  padding: 12px 25px; /* Increased padding to match larger buttons */
+  font-size: 14px; /* Larger font size for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.submit-button {
+  background-color: #42C2C2; /* Original confirm button color */
+  color: white;
+  border-color: #42C2C2;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.cancel-button {
+  background-color: #d9d9d9; /* Original cancel button background color */
+  color: #333;
+  border-color: #d9d9d9;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.reset-button {
+  background-color: #ffcc00; /* Yellow reset button */
+  color: white;
+  border-color: #ffcc00;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+/* Add more margin below the form items to create space */
+.form-item {
+  margin-bottom: 28px; /* Increased margin to create more space */
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.form-item.description label,
+.form-item.date label {
+  font-weight: normal; /* กำหนดให้เป็นตัวปกติสำหรับเฉพาะ description และ date */
+}
+
+/* Adjust the spacing for a cleaner look */
+.form-group {
+  margin-bottom: 28px; /* Increased margin between input fields */
+}
+
+/* Optional: Add hover effects for the buttons */
+.submit-button:hover,
+.reset-button:hover,
+.cancel-button:hover {
+  opacity: 0.9;
+}

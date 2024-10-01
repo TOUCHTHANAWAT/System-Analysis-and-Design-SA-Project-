@@ -1,0 +1,83 @@
+.edit-treatment-record {
+  max-width: 900px; /* Increase the width for a much wider form */
+  max-height: 650px;
+  margin: 0 auto; /* Center the form */
+  padding: 50px; /* Increased padding for better spacing */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+  font-family: 'Noto Sans Thai', sans-serif;
+  color: #333;
+}
+
+header h1 {
+  font-size: 24px; /* Increased font size */
+  color: #22225E; /* Dark blue color */
+  margin-bottom: 20px; /* Space below the header */
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+header h1::before {
+  content: '💉'; /* Icon for the header */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between; /* Ensure fields are well spaced */
+  margin-bottom: 0.2px; /* More space between rows */
+  gap: 20px; /* กำหนดช่องว่างระหว่างฟิลด์ */
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px; /* Increase margin for more spacing between inputs */
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  width: 100%;
+  display: block;
+  font-size: 14px; /* Larger font size for labels */
+  margin-bottom: 9px; /* Increase space between label and input */
+  color: #333;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px; /* More space between the buttons */
+  margin-top: 0.5px;
+  justify-content: flex-start;
+}
+
+/* Add more margin below the form items to create space */
+.form-item.description label,
+.form-item.date label {
+  font-weight: normal; /* กำหนดให้เป็นตัวปกติสำหรับเฉพาะ description และ date */
+}
+
+/* Adjust the spacing for a cleaner look */
+.form-group {
+  margin-bottom: 28px; /* Increased margin between input fields */
+}
+
+.logo-container-center {
+  width: 89px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+.logo-image-center {
+  width: 100%;
+  height: auto;
+}

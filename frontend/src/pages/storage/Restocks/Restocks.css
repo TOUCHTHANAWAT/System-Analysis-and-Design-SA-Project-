@@ -1,0 +1,73 @@
+.ant-table-thead > tr > th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+}
+
+.ant-table {
+  border: 1px solid #42C2C2;
+  border-radius: 50px;
+}
+
+h1 {
+  color: #180e71;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px; 
+  font-size: 28px; 
+  margin-left: -9px;
+  margin-right: 0; 
+}
+
+.space-align-container .ant-space {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+/* ปรับแต่งเส้นคั่น */
+.ant-divider {
+  border-top: 2px solid #42C2C2;
+  width: 100%;
+}
+
+button {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+button.cancel {
+  background-color: #ffffff;
+  border: 1.5px solid #bdbdbd; 
+  color: black;
+}
+
+
+button.reset {
+  background-color: #FED635;
+  color: black;
+}
+
+button.submit {
+  background-color: #42C2C2;
+  color: white;
+}
+
+button.delete {
+  background-color: #dedede;
+  border: 1.5px solid #dedede; 
+  color: black;
+}
+
+button:hover {
+  opacity: 0.6;
+}

@@ -1,0 +1,88 @@
+.login-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 600vh;
+    background: linear-gradient(135deg, #ffffff 50%, #29b3b0 50%);
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.login-box {
+    background-color: rgb(255, 255, 255);
+    margin-right: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 460px;
+    height: 430px;
+    animation: glowing 1.5s infinite; /* เพิ่มการเคลื่อนไหว */
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 12px;
+    margin-top: -10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 500px;
+}
+
+.input-group input {
+    /* width: 100%;
+    padding: 10px;
+    
+    border: 1px solid #ccc;
+    border: 1px solid rgba(9, 118, 168, 0.651);
+    border-radius: 10px; */
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(9, 118, 168, 0.651);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* ค่าโปร่งแสงเริ่มต้น */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* เพิ่ม transition เพื่อให้เกิดความนุ่มนวล */
+}
+
+.login-btn {
+    width: 100%; /* Adjust width to less than 100% for centering */
+    padding: 10px;
+    background-color: #29b3b0;
+    border: none;
+    border-radius: 5px;
+    /* color: white; */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto; /* Centers the button */
+    margin-top: 15px;
+}
+
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.input-group input:focus {
+    background-color: rgba(255, 255, 255, 1); /* ทำให้โปร่งใสน้อยลงเมื่อคลิก */
+    opacity: 1; /* ความโปร่งใสเต็มที่เมื่อกำลังกรอกข้อมูล */
+    outline: none; /* เอาเส้นขอบของเบราว์เซอร์ออก */
+}

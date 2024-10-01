@@ -1,0 +1,196 @@
+/* ส่วนหัวข้อ "Schedule" และไอคอน */
+.schedule-header {
+    display: flex;                /* จัดเรียงแบบ Flexbox */
+    align-items: center;          /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    gap: 2px;                    /* เว้นระยะห่างระหว่างไอคอนกับข้อความ */
+    font-size: 24px;              /* ขนาดฟอนต์ของข้อความ */
+    font-weight: bold;            /* ทำให้ข้อความหนา */
+    margin-bottom: 20px;          /* เพิ่มระยะห่างด้านล่าง */
+  }
+  
+  /* ไอคอนของปฏิทิน */
+  .schedule-icon {
+    font-size: 30px;        /* กำหนดขนาดของไอคอน */
+    font-weight: bold;
+    color: #22225E;       /* กำหนดสีของไอคอน */
+    margin-right: 5px;      /* เพิ่มระยะห่างระหว่างไอคอนและหัวข้อ */              /* กำหนดขนาดไอคอน */
+  }
+  
+  /* ข้อความหัวข้อ */
+  .schedule-title {
+    margin: 0px;
+    font-size: 34px;
+    font-family: 'Noto Sans Thai';
+    color: #333; /* เปลี่ยนสีเป็นสีที่คุณต้องการ */
+    color: #22225E; /* เปลี่ยนสีของข้อความ "นัดหมายคนไข้ใน" */
+  }
+  
+  /* คอนเทนเนอร์หลักที่ครอบคลุมทั้งปฏิทินและรายการนัดหมาย */
+  .schedule-container {
+    max-width: 1300px;            /* กำหนดความกว้างสูงสุด */
+    display: flex;                /* ใช้การจัดเรียงแบบ Flexbox */
+    gap: 20px;                    /* ระยะห่างระหว่างปฏิทินและรายการนัดหมาย */
+    padding: 30px 25px;           /* เพิ่ม padding รอบนอก */
+    background-color: #f0f2f5;    /* กำหนดพื้นหลังเป็นสีเทาอ่อน */
+    border-radius: 10px;          /* ทำให้ขอบโค้งมน */
+    max-height: 500px;
+  }
+  
+  /* ส่วนของปฏิทิน */
+  .calendar-section {
+    flex: 1;                      /* ใช้พื้นที่ 1 ส่วนของคอนเทนเนอร์ */
+    background-color: #fff;       /* พื้นหลังสีขาว */
+    padding: 5px;                 /* ระยะห่างภายใน */
+    border-radius: 10px;          /* ขอบโค้งมน */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเพื่อความลึก */
+  }
+  
+  /* ส่วนของรายการนัดหมาย */
+  .appointments-section {
+    flex: 1;                      /* ใช้พื้นที่ 1 ส่วนของคอนเทนเนอร์ */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;            /* เพิ่มความสูงของพื้นที่ให้มากขึ้น */
+    overflow-y: auto;             /* เลื่อนลงได้หากมีข้อมูลเยอะ */
+  }
+  
+  /* ปุ่มเพิ่มนัดหมาย */
+  .add-button-container {
+    display: flex;
+    justify-content: flex-end; /* หรือ right ก็ได้ */
+    margin-right: 20px; /* ปรับค่าตามต้องการ */
+    margin-bottom: 20px; /* เพิ่ม margin ด้านล่าง */
+    padding-bottom: 10px; /* หรือเพิ่ม padding ด้านล่าง */
+}
+
+.add-button {
+    margin-top: 50px; /* Adjust this value as needed */
+    align-self: flex-end;
+}
+
+
+/* button */
+
+.icon-btn {
+  width: 30px;                      /* กำหนดความกว้างของปุ่มเป็น 30px */
+  height: 30px;                     /* กำหนดความสูงของปุ่มเป็น 30px */
+  border: 0.25px solid rgba(0, 0, 0, 0.411);      /* กำหนดเส้นขอบของปุ่ม */
+  background: #42c2c2;            /* สีพื้นหลังของปุ่มเป็นสีขาว */
+  border-radius: 25px;              /* ทำให้ปุ่มเป็นวงกลม (ค่าเกินครึ่งของขนาด) */
+  overflow: hidden; /* ซ่อนส่วนที่เกินของเนื้อหาในปุ่ม */
+  position: relative; /* ใช้สำหรับจัดการตำแหน่งขององค์ประกอบภายใน */
+  transition: width 0.2s ease-in-out; /* เพิ่ม transition เมื่อขนาดปุ่มเปลี่ยน */
+  font-weight: 500; /* น้ำหนักของฟอนต์ */
+  font-family: inherit; /* ใช้ฟอนต์จาก parent */
+}
+.add-btn {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+   /* ให้ข้อความขยายเต็มพื้นที่ปุ่ม */
+}
+/* เมื่อ hover บนปุ่ม เพิ่มความกว้าง */
+.add-btn:hover {
+  width: 85px; /* ขยายปุ่มเมื่อ hover เป็น 120px */
+}
+
+/* สร้างเครื่องหมายขีดแนวนอนด้านในปุ่ม */
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out; /* การเปลี่ยนแปลงขนาดและรูปร่าง */
+  content:    "";               /* เพิ่มเนื้อหาว่างที่จะแสดงเป็นเส้น */
+  position:   absolute;         /* ตำแหน่งสัมพัทธ์กับปุ่ม */
+  height:     3px;              /* ความสูงของขีด */
+  width:      10px;             /* ความกว้างของขีด */
+  top:        calc(50% - 2px);  /* วางไว้ตรงกลางของปุ่ม */
+  background: white ; /* สีของขีด*/
+}
+
+/* ขีดแนวนอนด้านขวาของปุ่ม */
+.add-btn::after {
+  right: 5px;                       /* วางไว้ทางขวาของปุ่ม */
+  overflow: hidden;                 /* ซ่อนส่วนเกินถ้ามี */
+  border-top-right-radius:    2px;  /* ทำให้มุมขวาด้านบนโค้ง */
+  border-bottom-right-radius: 2px;  /* ทำให้มุมขวาด้านล่างโค้ง */
+}
+
+/* ขีดแนวนอนด้านซ้ายของปุ่ม */
+.add-btn::before {
+  left: 5px;                        /* วางไว้ทางซ้ายของปุ่ม */
+  border-top-left-radius: 2px;      /* ทำให้มุมซ้ายด้านบนโค้ง */
+  border-bottom-left-radius: 2px;   /* ทำให้มุมซ้ายด้านล่างโค้ง */
+}
+
+/* เมื่อปุ่มถูกโฟกัสจะไม่มีเส้นขอบแบบ focus */
+.icon-btn:focus {
+  outline: none; /* ลบเส้นขอบที่มักปรากฏเมื่อโฟกัส */
+}
+
+/* ข้อความในปุ่ม */
+.btn-txt {
+  opacity: 0;               /* เริ่มต้นด้วยความโปร่งใส */
+  transition: opacity 0.2s; /* การเปลี่ยนแปลงของความโปร่งใส */
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+/* เมื่อ hover บนปุ่ม ลดขนาดขีดแนวนอน */
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px; /* ลดความกว้างของขีดเหลือ 4px */
+  border-radius: 2px; /* มุมขีดจะโค้งเล็กน้อย */
+}
+
+/* ทำให้ข้อความปรากฏเมื่อ hover */
+.add-btn:hover .btn-txt {
+  opacity: 1; /* แสดงข้อความในปุ่ม */
+}
+
+/* สัญลักษณ์บวก */
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out; /* การเปลี่ยนแปลงทั้งหมดเมื่อมีการ hover */
+  content: "";                      /* เพิ่มเนื้อหาว่างที่จะเป็นขีดของสัญลักษณ์บวก */
+  position: absolute;               /* ตำแหน่งสัมพัทธ์กับปุ่ม */
+  height: 18px;                     /* ความสูงของขีดบวก */
+  width: 2px;                       /* ความกว้างของขีดบวก */
+  top: calc(50% - 9px);             /* วางตรงกลางของปุ่ม */
+  background: white;              /* สีของขีดเป็น seagreen */
+  overflow: hidden;                 /* ซ่อนส่วนเกิน */
+}
+
+/* ขีดแนวตั้งด้านซ้ายของสัญลักษณ์บวก */
+.add-icon::before {
+  left: 13px; /* วางไว้ทางซ้ายของปุ่ม */
+  border-top-left-radius: 2px; /* ทำให้มุมซ้ายบนโค้ง */
+  border-bottom-left-radius: 2px; /* ทำให้มุมซ้ายล่างโค้ง */
+}
+
+/* ขีดแนวตั้งด้านขวาของสัญลักษณ์บวก */
+.add-icon::after {
+  right: 13px; /* วางไว้ทางขวาของปุ่ม */
+  border-top-right-radius: 2px; /* ทำให้มุมขวาบนโค้ง */
+  border-bottom-right-radius: 2px; /* ทำให้มุมขวาล่างโค้ง */
+}
+
+/* เมื่อ hover บนปุ่ม ลดขนาดขีดในสัญลักษณ์บวก */
+.add-btn:hover .add-icon::before {
+  left: 15px; /* ลดตำแหน่งแนวซ้ายเมื่อ hover */
+  height: 4px; /* ลดความสูงของขีดเหลือ 4px */
+  top: calc(50% - 2px); /* ปรับให้เข้ากับตำแหน่งใหม่ */
+  background: rgba(255, 255, 255, 0); 
+}
+
+/* เมื่อ hover บนปุ่ม ลดขนาดขีดในสัญลักษณ์บวก */
+.add-btn:hover .add-icon::after {
+  right: 15px; /* ลดตำแหน่งแนวขวาเมื่อ hover */
+  height: 4px; /* ลดความสูงของขีดเหลือ 4px */
+  top: calc(50% - 2px); /* ปรับให้เข้ากับตำแหน่งใหม่ */
+  background: rgba(255, 255, 255, 0); 
+}
+

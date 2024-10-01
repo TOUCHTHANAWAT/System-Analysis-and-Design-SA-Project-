@@ -1,0 +1,81 @@
+html, body{
+  height: 100%; /* กำหนดให้หน้า HTML และ body มีความสูง 100% */
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* อนุญาตให้เลื่อนแนวตั้งทั้งหน้า */
+}
+
+.savepayment-page {
+  width: 100%;
+  max-width: 1300px; /* จำกัดความกว้างสูงสุด */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* รวม padding ในการคำนวณขนาด */
+  background-color: #ffffff;
+  min-height: 100vh; /* ความสูงขั้นต่ำเท่ากับความสูงของหน้าจอ */
+  overflow-y: visible; /* ให้แน่ใจว่าสามารถเลื่อนได้หากเนื้อหาเกินหน้าจอ */
+}
+
+.saveheader {
+  background-color: #ffffff;
+  width: 100%;
+  margin-left: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #22225E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* เพื่อจัดแนวให้อยู่กึ่งกลางแนวตั้ง */
+}
+
+.appointment:hover{
+  text-decoration: underline;
+}
+
+
+.savepaymentlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.savepaymentlist-table th,
+.savepaymentlist-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.savepaymentlist-table th {
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: medium;
+  border-bottom: 2px solid #22225E;
+  border-top: 2px solid #22225E;
+}
+
+.savepaymentlist-table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #22225E;
+}
+
+.savepaymentlist-table tbody tr:hover {
+  background: linear-gradient(90deg, #65be92, #81eeab); /* White background for table rows */
+  color: #ffffff;
+  text-shadow: 4px 4px 5px rgba(2, 177, 75, 0.465);
+  border-bottom: 3px solid #22225E;
+  border-top: 3px solid #22225E;
+}
+
+.savestatus {
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #e9fff7;
+  color: #00be49;
+}
+

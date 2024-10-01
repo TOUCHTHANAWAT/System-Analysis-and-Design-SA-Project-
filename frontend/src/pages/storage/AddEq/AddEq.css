@@ -1,0 +1,59 @@
+.equipment-create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66.5vh;
+    background-color: #ffffff;
+    
+  }
+  
+  .equipment-card {
+    max-width: 650px;
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    width: 115px;   
+    margin-bottom: 3px; 
+  }
+  
+  .form-title {        /*text-head*/
+    text-align: center;
+    margin-bottom: 10px;
+    color: #42C2C2;
+  }
+
+  .ant-form-item {
+    margin-bottom: 5px; 
+  }
+  
+  .ant-input,
+  .ant-picker,
+  .ant-input-number {
+    border-radius: 4px;
+    padding: 3px;   
+  }
+  
+  .formhAdd {
+    width: auto;
+    max-width: 400px;   
+    margin-left: 100px;  
+    background-color: #42C2C2;  
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .label1Add {
+    color: #ffffff;
+    text-align: center;
+    text-align: middle;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+  }

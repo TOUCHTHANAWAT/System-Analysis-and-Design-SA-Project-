@@ -1,0 +1,121 @@
+
+
+
+.appointment-form {
+  
+  max-width: 900px; /* กำหนดความกว้างสูงสุดของฟอร์ม */
+  margin: 0 auto; /* จัดฟอร์มให้อยู่กลางหน้าจอ */
+  padding: 40px 25px; /* เพิ่มระยะห่างภายในฟอร์ม */
+  background-color: #fff; /* กำหนดพื้นหลังสีขาว */
+  border-radius: 8px; /* มุมของฟอร์มโค้งมน */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับฟอร์ม */
+  text-align: left; /* จัดข้อความในฟอร์มให้อยู่กลาง */
+}
+
+.logo {
+  
+  width: 150px; /* กำหนดความกว้างของโลโก้ */
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของโลโก้ */
+}
+
+.headercreateschedule {
+  
+  display: flex; /* ใช้ Flexbox ในการจัดเรียงไอคอนและหัวข้อ */
+  align-items: left; /* จัดให้ไอคอนและหัวข้ออยู่ในแนวเดียวกัน */
+  justify-content: left; /* จัดไอคอนและหัวข้อให้อยู่กลางหน้าจอ */
+  margin-bottom: 60px; /* เพิ่มระยะห่างด้านล่างของส่วนหัว */
+  border-bottom: 2px solid #22225E
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  color: #22225E; /* Dark blue */
+}
+
+.iconcreate {
+  font-size: 24px; /* กำหนดขนาดของไอคอน */
+  color: #22225E; /* กำหนดสีของไอคอน */
+  margin-right: 15px; /* เพิ่มระยะห่างระหว่างไอคอนและหัวข้อ */
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Noto Sans Thai';
+  color: #333; /* เปลี่ยนสีเป็นสีที่คุณต้องการ */
+  color: #22225E; /* เปลี่ยนสีของข้อความ "นัดหมายคนไข้ใน" */
+}
+
+
+.form-row {
+  
+  display: flex; /* ใช้ Flexbox จัดเรียงฟิลด์ฟอร์ม */
+  justify-content: space-between; /* จัดฟิลด์ฟอร์มให้มีระยะห่างเท่ากัน */
+  margin-bottom: 15px; /* เพิ่มระยะห่างด้านล่างของแต่ละแถวฟอร์ม */
+}
+
+.ant-form-item {
+  
+  flex: 1; /* กำหนดให้ฟิลด์มีขนาดยืดหยุ่นตามความกว้าง */
+  margin-right: 24px; /* เพิ่มระยะห่างระหว่างฟิลด์ */
+}
+
+.ant-form-item:last-child {
+  
+  margin-right: 0; /* กำจัดระยะห่างด้านขวาของฟิลด์สุดท้ายในแถว */
+}
+
+.ant-picker {
+  width: Auto; /* ตั้งค่าให้ DatePicker มีความกว้างเต็มที่ */
+  max-width: 1000px; /* กำหนดความกว้างสูงสุดเพื่อให้สอดคล้องกับ input อื่นๆ */
+  padding: 8px; /* เพิ่ม padding เพื่อให้เท่ากับ input อื่นๆ */
+}
+
+.patient-status {
+  font-family: 'Noto Sans Thai';
+  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+  text-align: left; /* จัดลิงก์ให้ชิดซ้าย */
+  padding-left: -30px; /* ปรับระยะห่างจากขอบด้านซ้ายให้ติดขอบมากขึ้น */
+  margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+  position: relative;
+}
+
+.patient-status a {
+  color: #1890ff; /* กำหนดสีของลิงก์ */
+  font-size: 14px; /* กำหนดขนาดของลิงก์ */
+  position: relative; /* กำหนดตำแหน่งเป็น relative เพื่อให้สามารถปรับตำแหน่งได้ */
+  top: 5px; /* เลื่อนลิงก์ลงด้านล่าง 5px */
+  left: 10px; /* เลื่อนลิงก์ไปทางซ้าย 20px */
+}
+.form-actions {
+  display: flex; /* ใช้ Flexbox ในการจัดวางปุ่ม */
+  justify-content: flex-start; /* จัดปุ่มให้อยู่ชิดซ้าย */
+  gap: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  margin-top: 5px; /* เพิ่มระยะห่างด้านบนของกลุ่มปุ่ม */
+  padding-left: 0px; /* ปรับระยะห่างจากขอบด้านซ้าย */
+  position: relative;
+}
+
+.submit-button-schedule-create,
+.cancel-button-schedule-create {
+  font-family: 'Noto Sans Thai';
+  width: 10%; /* กำหนดความกว้างของปุ่ม */
+  min-width: 50px; /* กำหนดความกว้างขั้นต่ำเพื่อให้ปุ่มไม่เล็กเกินไป */
+  
+}
+
+.submit-button-schedule-create {
+  background-color: #42C2C2;
+  border-color: #42C2C2;
+  color: #fff;
+}
+
+.cancel-button-schedule-create {
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+  color: #333;
+}

@@ -1,0 +1,198 @@
+.schedulerecord-records {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.schedulerecord-header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedulerecord-header h1 {
+  font-size: 32px;
+  color: #22225E;
+}
+.schedulerecord-header h1::before {
+  content: ''; /* ไอคอน */
+  margin-right: 8px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+.schedulerecord-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.schedulerecord-patient-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.schedulerecord-add-record-button {
+  background-color: #00c1a4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.schedulerecord-records-table {
+  width: 100%; /* ปรับขนาดตารางให้แสดงเต็มพื้นที่ */
+  overflow-x: auto; /* ให้เลื่อนซ้ายขวาได้หากพื้นที่ไม่พอ */
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedulerecord-records-table th, .schedulerecord-records-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedulerecord-records-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Fixed column widths */
+.schedulerecord-records-table th:nth-child(1),
+.schedulerecord-records-table td:nth-child(1) {
+  width: 15%;
+}
+
+.schedulerecord-records-table th:nth-child(2),
+.schedulerecord-records-table td:nth-child(2) {
+  width: 15%;
+  text-align: left;
+}
+
+.schedulerecord-records-table th:nth-child(3),
+.schedulerecord-records-table td:nth-child(3) {
+  width: 15%;
+}
+
+.schedulerecord-records-table th:nth-child(4),
+.schedulerecord-records-table td:nth-child(4) {
+  width: 15%;
+}
+
+.schedulerecord-records-table th:nth-child(5),
+.schedulerecord-records-table td:nth-child(5) {
+  width: 15%;
+}
+
+.schedulerecord-records-table th:nth-child(6),
+.schedulerecord-records-table td:nth-child(6) {
+  width: 15%;
+}
+
+.schedulerecord-records-table th:nth-child(7),
+.schedulerecord-records-table td:nth-child(7) {
+  width: 15%;
+}
+
+.schedulerecord-records-table td {
+  background-color: #fff;
+}
+
+.schedulerecord-edit-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+.schedulerecord-delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+
+.table-container {
+  border: 2px solid #ccc;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin: 0 auto 20px auto; /* จัดให้อยู่ตรงกลางและมี margin ด้านล่าง */
+  max-width: 100%;
+  text-align: center; /* จัดตารางและเนื้อหาใน container ให้อยู่ตรงกลาง */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดตำแหน่งตารางให้อยู่ตรงกลาง */
+}
+
+/* สำหรับสถานะ Done */
+/* .tstatuscolor.done {
+  background-color: #e0ffe0; 
+  color: #00be49; 
+} */
+
+/* สำหรับสถานะ Pending */
+/* .tstatuscolor.pending {
+  background-color: #fffbe0; 
+  color: #ffcc00; 
+} */
+.tstatuscolor.สำเร็จ {
+  background-color: #e0ffe0; /* สีพื้นหลังเขียวอ่อน */
+  color: #00be49; /* สีตัวอักษรเขียว */
+}
+
+/* สำหรับสถานะ รอดำเนินการ */
+.tstatuscolor.รอดำเนินการ {
+  background-color: #fffbe0; /* สีพื้นหลังเหลืองอ่อน */
+  color: #b49d17; /* สีตัวอักษรเหลืองเข้ม */
+}
+
+/* สำหรับสถานะ ยกเลิก */
+.tstatuscolor.ยกเลิก {
+  background-color: #ffe0e0; /* สีพื้นหลังแดงอ่อน */
+  color: #ff4d4d; /* สีตัวอักษรแดง */
+}
+
+.message-box {
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+.tstatuscolor {
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.pagination-container {
+  width: 100%; /* ให้กินพื้นที่เต็ม */
+  display: flex;
+  justify-content: flex-end; /* จัดปุ่มให้อยู่ขอบขวา */
+  margin-top: 10px; /* เพิ่มระยะห่างด้านบนปุ่ม */
+}
+
+.change-status-text {
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding-left: 5px;
+  
+}
+
+.change-status-text:hover {
+  color: rgb(190, 20, 20);
+}
