@@ -1,0 +1,41 @@
+--- Backend ---
+cd backend
+go mod init github.com/tanapon395/sa-67-example
+go get -u github.com/gin-gonic/gin
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/sqlite
+go get -u github.com/dgrijalva/jwt-go
+go get -u golang.org/x/crypto@v0.16.0
+--- หลังสร้าง Backend เสร็จ ---
+go mod tidy
+go build -o main.exe main.go
+.\main.exe
+
+--- Frontend ---
+npm create vite@latest <<ชื่อโปรเจค>>
+cd <<ชื่อโปรเจค>>
+npm install
+--- ทดสอบ http://localhost:5173 ---
+npm run dev
+npm install --save react-router-dom@6.x
+npm install antd --save
+npm instal axios --save
+npm instal dayjs --save
+
+--- Run ---
+go run main.go
+npm run dev
+
+
+//
+go get -u github.com/golang-jwt/jwt/v5
+// เพิมเติม backend
+npm install jspdf --save
+npm install jspdf jspdf-autotable
+
+//github
+git init 
+git add . 
+git commit -m "my first commit" 
+git branch -m main 
+git push -u origin main
